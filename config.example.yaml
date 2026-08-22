@@ -1,0 +1,69 @@
+# EA-100 benchmark harness config
+# JSON is always supported (stdlib). YAML works too when PyYAML is installed.
+# Any api_key_env is resolved from the environment or ~/.hermes/.env — keys are never printed.
+
+# Same system prompt for every task, per the EA-100 protocol.
+system_prompt: "You are a helpful general-purpose assistant."
+
+sampling:
+  temperature: 0.0        # low temperature for reproducibility
+  max_tokens: 4096
+
+# The judge model scores responses on the 0-10 rubric (independent of the candidate).
+# Use a strong model from a DIFFERENT family than the candidate to avoid self-grading bias.
+judge:
+  model: deepseek-v4-flash
+  base_url: https://api.deepseek.com/v1
+  api_key_env: DEEPSEEK_API_KEY
+  temperature: 0.0
+  max_tokens: 1024
+
+models:
+  # Example: hosted API
+  deepseek-flash:
+    model: deepseek-v4-flash
+    base_url: https://api.deepseek.com/v1
+    api_key_env: DEEPSEEK_API_KEY
+    vision: false          # true if the model can take images (tasks 88-89)
+    image_gen: false       # true only if the stack has an image-generation tool (tasks 63-64)
+    meta:
+      quantization: "n/a (API)"
+      backend: "DeepSeek API"
+      hardware: "hosted"
+      context: "128k"
+      notes: ""
+
+  # Example: local llama.cpp / vLLM / LM Studio (OpenAI-compatible endpoint)
+  local-qwen:
+    model: qwen-27b-q4
+    base_url: http://127.0.0.1:8080/v1   # SSH tunnel to a remote GPU host, or LAN IP
+    api_key_env: ""                      # no auth for local servers
+    vision: false
+    image_gen: false
+    meta:
+      quantization: "Q4_K_M"
+      backend: "llama.cpp bXXXX"
+      hardware: "ai1 RX 9070 XT 16GB"
+      context: "8192"
+      notes: ""
+
+  # ai1, Vulkan backend (RADV). Build: llama.cpp-upstream build-vulkan (GGML_VULKAN=ON).
+  # 8GB VRAM tier: no 8GB GPU exists, so models are ARTIFICIALLY capped at 8GB via
+  # layer offload (scripts/serve_ai1.sh enforces + verifies the budget from the log).
+  ai1-vulkan:
+    model: <gguf-filename-basename>
+    base_url: http://127.0.0.1:8081/v1    # ssh -L 8081:127.0.0.1:8081 ai1 -N
+    api_key_env: ""
+    vision: false
+    image_gen: false
+    timeout: 600
+    meta:
+      quantization: "Q4_K_M"
+      backend: "llama.cpp upstream 4801e3c Vulkan (RADV GFX1201)"
+      hardware: "ai1 RX 9070 XT 16GB, ARTIFICIALLY LIMITED TO 8GB VRAM"
+      context: "8192"
+      notes: "VRAM budget 8GiB via --n-gpu-layers offload; measured VRAM recorded from server log"
+
+runs_dir: runs
+tasks_json: data/ea100_tasks.json
+assets_dir: assets

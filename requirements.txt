@@ -1,0 +1,5 @@
+# EA-100 benchmark harness — stdlib only (urllib/json/csv/argparse).
+# No install required. PyYAML is optional and only needed for .yaml config files;
+# JSON configs work everywhere (JSON is a subset of YAML for our purposes).
+#
+# Optional: pip install pyyaml   # only if you prefer .yaml configs

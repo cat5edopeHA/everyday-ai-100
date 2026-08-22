@@ -1,0 +1,1216 @@
+{
+  "name": "EA-100",
+  "version": "1.0",
+  "source": "EA-100_Everyday_AI_Benchmark.md",
+  "task_count": 100,
+  "core_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100
+  ],
+  "vision_tool_ids": [
+    63,
+    64,
+    88,
+    89
+  ],
+  "assets_dir": "assets",
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Modem, router, and switch",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "A friend says a modem, router, and Ethernet switch are basically the same thing. Explain the difference between the three in plain English, and give one example of when a home network would need each device.",
+      "evaluator_notes": [
+        "Correctly distinguishes WAN/ISP termination, routing/NAT, and Layer-2 port expansion.",
+        "Uses plain language and practical examples without unnecessary jargon."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "401(k) vs IRA",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "What is the practical difference between a 401(k) and an IRA for someone in the United States? Focus on who provides it, contribution rules at a high level, employer matching, and investment choice. Do not give personalized tax advice.",
+      "evaluator_notes": [
+        "Distinguishes employer plan vs individual account and mentions employer match.",
+        "Avoids inventing exact current contribution limits; appropriately notes tax specifics can vary."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Induction vs resistance cooktops",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "How is an induction cooktop different from a normal electric glass-top stove? Explain how each heats the pan, the main pros and cons, and whether every pot will work on induction.",
+      "evaluator_notes": [
+        "Explains magnetic induction versus resistive heating.",
+        "Notes cookware must be magnetically compatible and gives balanced tradeoffs."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Why Earth has seasons",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "Why do we have seasons? Someone told me summer happens because Earth is closer to the Sun. Explain what is actually happening in a way a middle-school student could understand.",
+      "evaluator_notes": [
+        "Centers axial tilt and sun angle/day length, not orbital distance.",
+        "Clear, age-appropriate explanation."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Wi-Fi 6, 6E, and 7",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "Explain the practical difference between Wi-Fi 6, Wi-Fi 6E, and Wi-Fi 7 for a home user. I care more about what changes in real life than about marketing names.",
+      "evaluator_notes": [
+        "Explains 6E adds 6 GHz and Wi-Fi 7 adds newer high-throughput/latency features.",
+        "Avoids claiming every device or environment will see dramatic gains."
+      ]
+    },
+    {
+      "id": 6,
+      "title": "What SPF 30 means",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "What does SPF 30 actually mean on sunscreen? Does it mean I can stay in the sun 30 times longer without getting burned?",
+      "evaluator_notes": [
+        "Explains SPF as a UVB protection measure and why the time-multiplier interpretation is oversimplified.",
+        "Mentions application/reapplication and broad-spectrum protection without overclaiming."
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Credit utilization",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "Explain credit-card utilization like I am new to credit. What is it, how is it usually calculated, and why can a card with a high balance affect a credit score even if I pay on time?",
+      "evaluator_notes": [
+        "Defines balance-to-limit utilization at card and aggregate level.",
+        "Explains reporting timing and score sensitivity without asserting a universal magic threshold."
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Lease vs finance",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "What are the main practical differences between leasing a car and financing a car purchase? Compare ownership, mileage, monthly payment tendencies, wear charges, and what happens at the end.",
+      "evaluator_notes": [
+        "Accurately contrasts ownership/equity and end-of-term outcomes.",
+        "Balanced treatment of payment, mileage, and wear considerations."
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Reverse proxy",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "What is a reverse proxy, and why would someone running several web services at home use one? Give a concrete example with three services behind one public IP address.",
+      "evaluator_notes": [
+        "Explains client -> proxy -> backend routing and hostnames/TLS.",
+        "Concrete example is technically plausible."
+      ]
+    },
+    {
+      "id": 10,
+      "title": "SSD wear",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "Why do SSDs wear out when they do not have moving parts? Explain NAND write endurance, wear leveling, and why normal desktop use usually does not kill an SSD quickly.",
+      "evaluator_notes": [
+        "Explains finite program/erase cycles and controller wear leveling.",
+        "Calibrates risk rather than exaggerating failure."
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Inflation vs cost of living",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "What is the difference between inflation and cost of living? They sound like the same thing to me.",
+      "evaluator_notes": [
+        "Defines inflation as change in general price level and cost of living as household/location-specific expense level.",
+        "Gives a clear example showing the distinction."
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Deductible, copay, coinsurance",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "In U.S. health insurance, explain deductible, copay, coinsurance, and out-of-pocket maximum using one simple example. Keep it conceptual rather than plan-specific.",
+      "evaluator_notes": [
+        "Correctly distinguishes the four terms.",
+        "Uses a coherent example and avoids implying every plan applies them identically."
+      ]
+    },
+    {
+      "id": 13,
+      "title": "USB-C capabilities",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "Why can two devices both have USB-C ports but support very different charging speeds, display output, and data speeds? What should I look for instead of assuming USB-C means everything is compatible?",
+      "evaluator_notes": [
+        "Explains connector shape versus protocols/power/video capabilities.",
+        "Mentions cable capability and device specifications."
+      ]
+    },
+    {
+      "id": 14,
+      "title": "RAM speed terminology",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "A product page says DDR5-6000 memory is \"6000 MHz.\" Is that technically accurate? Explain the difference between clock frequency and data-transfer rate without getting overly pedantic.",
+      "evaluator_notes": [
+        "Explains MT/s versus actual clock in DDR memory.",
+        "Balances technical correctness with common marketing usage."
+      ]
+    },
+    {
+      "id": 15,
+      "title": "VPN privacy limits",
+      "category": "Specific information / factual questions",
+      "kind": "text",
+      "prompt": "What does a consumer VPN actually hide, and what does it not hide? Explain what the ISP, VPN provider, destination website, and my employer can potentially still see.",
+      "evaluator_notes": [
+        "Accurately distinguishes network-path visibility from account/browser tracking.",
+        "Avoids \"VPN makes you anonymous\" claims and notes employer-managed-device caveats."
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Percentages from first principles",
+      "category": "Tutoring / teaching",
+      "kind": "text",
+      "prompt": "Teach me how percentages work as if I understand fractions but keep getting confused by percent increase and percent decrease. Use 20% of 80, then a price going from $80 to $100, then from $100 back to $80.",
+      "evaluator_notes": [
+        "Correct results and highlights that +25% then -20% are not symmetric.",
+        "Builds intuition instead of only giving formulas."
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Subnetting /24 to /27",
+      "category": "Tutoring / teaching",
+      "kind": "text",
+      "prompt": "Teach me what changes when a 192.168.10.0/24 network is split into /27 subnets. Show the subnet size, usable hosts per subnet, and the first two subnet ranges.",
+      "evaluator_notes": [
+        "Gets /27 block size 32 addresses and 30 traditional usable host addresses.",
+        "Correct first two ranges: .0-.31 and .32-.63 with appropriate network/broadcast addresses."
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Passive voice lesson",
+      "category": "Tutoring / teaching",
+      "kind": "text",
+      "prompt": "Teach me how to recognize passive voice. Give a simple rule of thumb, three examples, and rewrite each example into active voice.",
+      "evaluator_notes": [
+        "Correctly identifies passive constructions and transforms them.",
+        "Does not falsely label every use of \"was\" as passive."
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Supply and demand",
+      "category": "Tutoring / teaching",
+      "kind": "text",
+      "prompt": "Teach supply and demand using a real-world example of concert tickets. Explain what usually happens to equilibrium price and quantity if demand rises while supply stays fixed.",
+      "evaluator_notes": [
+        "Explains shift in demand and higher equilibrium price/quantity in standard model.",
+        "Uses example to build intuition."
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Independent probability",
+      "category": "Tutoring / teaching",
+      "kind": "text",
+      "prompt": "I struggle with probability. Teach me the difference between independent events and mutually exclusive events, and show why two events can be one but not the other.",
+      "evaluator_notes": [
+        "Correct definitions and examples.",
+        "Explains that nontrivial mutually exclusive events are not independent."
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Containers vs virtual machines",
+      "category": "Tutoring / teaching",
+      "kind": "text",
+      "prompt": "Teach me Docker containers versus virtual machines. Start with a simple analogy, then explain the technical difference in kernels, isolation, startup speed, and resource overhead.",
+      "evaluator_notes": [
+        "Explains shared host kernel versus full guest OS/kernel.",
+        "Balanced discussion of isolation and overhead."
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Git branches",
+      "category": "Tutoring / teaching",
+      "kind": "text",
+      "prompt": "Explain Git branches to someone who understands files and folders but has never used version control. Include commit, branch, merge, and why branches are cheap.",
+      "evaluator_notes": [
+        "Conceptually accurate commit graph explanation.",
+        "Avoids misleading \"branch is a full folder copy\" framing."
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Ser vs estar",
+      "category": "Tutoring / teaching",
+      "kind": "text",
+      "prompt": "Teach an English speaker the basic difference between Spanish \"ser\" and \"estar.\" Give at least six short examples and point out one case where a simplistic \"permanent vs temporary\" rule fails.",
+      "evaluator_notes": [
+        "Examples are grammatically sensible.",
+        "Acknowledges limitations of permanent/temporary heuristic."
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Pythagorean theorem",
+      "category": "Tutoring / teaching",
+      "kind": "text",
+      "prompt": "Teach me the Pythagorean theorem using a 3-4-5 triangle, then show how I would use it to find the diagonal of a 9 ft by 12 ft rectangular room.",
+      "evaluator_notes": [
+        "Correctly applies a^2+b^2=c^2 and gets 15 ft for both examples.",
+        "Explains when the theorem applies."
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Professional incident update",
+      "category": "Edit / rewrite provided text",
+      "kind": "text",
+      "prompt": "Rewrite this so it is professional, clear, and calm without sounding corporate or evasive:\n\n\"The tablets are still acting up. We fixed the logout thing a while ago but now wireless is dropping in random spots and every time I test it somebody finds another place it does not work. The proxy is doing what it should. The real problem now is Wi-Fi coverage and I do not want people thinking the original fix failed.\"",
+      "evaluator_notes": [
+        "Preserves the distinction between fixed session-persistence issue and remaining Wi-Fi issue.",
+        "Professional, concise tone with no blame."
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Shorten a Slack message",
+      "category": "Edit / rewrite provided text",
+      "kind": "text",
+      "prompt": "Make this Slack message shorter while keeping every important fact:\n\n\"Quick heads up that I am going to reboot the file server at 7:30 tonight because the pending updates require a restart. I expect the server to be unavailable for around 10 minutes, but I am blocking 30 minutes in case anything takes longer than expected. If you are working in shared files around then, please save and close them before 7:30.\"",
+      "evaluator_notes": [
+        "Retains time, reason, expected downtime, contingency window, and user action.",
+        "Noticeably shorter and suitable for chat."
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Simplify legal-style language",
+      "category": "Edit / rewrite provided text",
+      "kind": "text",
+      "prompt": "Rewrite this in plain English without changing the meaning:\n\n\"The tenant shall provide written notification to the property manager no fewer than thirty (30) days prior to the intended date of vacancy, except where a longer notice period is expressly required by the lease agreement.\"",
+      "evaluator_notes": [
+        "Preserves 30-day minimum and lease exception.",
+        "Plain language, no added legal claims."
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Warmer customer note",
+      "category": "Edit / rewrite provided text",
+      "kind": "text",
+      "prompt": "Rewrite this to sound warmer and more helpful, but do not promise a refund:\n\n\"Your request has been received. We are reviewing the order history and will respond after the investigation is complete. Do not submit duplicate requests.\"",
+      "evaluator_notes": [
+        "Warmer tone while preserving no-refund promise.",
+        "Politely discourages duplicates without sounding hostile."
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Resume bullet improvement",
+      "category": "Edit / rewrite provided text",
+      "kind": "text",
+      "prompt": "Improve this resume bullet so it focuses on impact and stays truthful:\n\n\"Helped move Macs from Jamf to Intune and worked on problems users had afterward.\"\n\nAssume the migration covered about 120 Macs. Do not invent percentages or business outcomes that were not provided.",
+      "evaluator_notes": [
+        "Includes scale of ~120 Macs and migration/troubleshooting responsibility.",
+        "Does not fabricate savings, uptime, or success percentages."
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Grammar while preserving voice",
+      "category": "Edit / rewrite provided text",
+      "kind": "text",
+      "prompt": "Fix grammar and punctuation but keep the casual voice:\n\n\"I dont think we should replace it yet, its annoying but it only happens once every few weeks and rebooting fixes it. if it starts happening more often then yeah I think we should swap it.\"",
+      "evaluator_notes": [
+        "Correct grammar and punctuation.",
+        "Preserves casual first-person style and meaning."
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Restructure a rambling note",
+      "category": "Edit / rewrite provided text",
+      "kind": "text",
+      "prompt": "Turn this into a clear 3-bullet update with the most important point first:\n\n\"We got the replacement AP yesterday. I have not installed it because Facilities is using the lift today. The warehouse is usable except aisle 7 still has the worst drops. The session proxy is stable. I should be able to mount the AP tomorrow morning if the lift is free, then I want to test with a driver before lunch.\"",
+      "evaluator_notes": [
+        "Three bullets, ordered by current state/next action.",
+        "Preserves aisle 7, proxy stability, installation dependency, and planned test."
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Technical to nontechnical",
+      "category": "Edit / rewrite provided text",
+      "kind": "text",
+      "prompt": "Rewrite this for a nontechnical manager:\n\n\"The VM exhausted its thin-provisioned datastore because snapshot deltas grew past the alert threshold. I consolidated the snapshot chain and expanded the datastore by 200 GB.\"",
+      "evaluator_notes": [
+        "Explains storage filled because snapshot data grew, then was cleaned up and capacity added.",
+        "Avoids unnecessary jargon while remaining accurate."
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Compress to 80 words",
+      "category": "Edit / rewrite provided text",
+      "kind": "text",
+      "prompt": "Shorten the following to no more than 80 words while preserving the recommendation and the two reasons:\n\n\"I recommend we keep the existing backup appliance for another year rather than replacing it this quarter. The hardware is still under support through next summer, and our current backup window finishes with more than two hours to spare. Replacing it now would give us more performance, but we do not have a capacity or reliability problem that requires the expense today. We should revisit the replacement during next year's budget cycle when support is closer to expiration.\"",
+      "evaluator_notes": [
+        "80 words or fewer.",
+        "Keeps recommendation, support-window reason, backup-window reason, and revisit timing."
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Intermittent home Wi-Fi",
+      "category": "How-to / practical guidance",
+      "kind": "text",
+      "prompt": "My laptop's Wi-Fi works fine in the living room but drops several times an hour in one bedroom. Give me a troubleshooting plan in the order you would actually test things, starting with the least disruptive checks.",
+      "evaluator_notes": [
+        "Ordered diagnosis: signal/interference/device comparison/AP placement before replacing hardware.",
+        "Includes ways to isolate whether problem is client, coverage, or interference."
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Organize years of photos",
+      "category": "How-to / practical guidance",
+      "kind": "text",
+      "prompt": "I have about 40,000 photos spread across a phone, laptop, and two external drives, with lots of duplicates. Give me a safe plan to consolidate and organize them without accidentally deleting the only copy of anything.",
+      "evaluator_notes": [
+        "Prioritizes backup/inventory before deduplication or deletion.",
+        "Provides staged, reversible workflow."
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Build a basic monthly budget",
+      "category": "How-to / practical guidance",
+      "kind": "text",
+      "prompt": "Give me a simple process for building a monthly budget when income is fixed but several bills vary. I do not want a complicated spreadsheet - just a system I can maintain in 15 minutes a week.",
+      "evaluator_notes": [
+        "Simple categories, fixed/variable/irregular costs, buffer, and weekly check.",
+        "Practical and low-maintenance."
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Prepare for a job interview",
+      "category": "How-to / practical guidance",
+      "kind": "text",
+      "prompt": "I have a 45-minute technical interview next week for an IT support role. Give me a 5-day preparation plan that covers technical review, behavioral questions, and questions I should ask the interviewer.",
+      "evaluator_notes": [
+        "Concrete five-day structure.",
+        "Balances technical, behavioral, and interviewer questions."
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Apartment move checklist plan",
+      "category": "How-to / practical guidance",
+      "kind": "text",
+      "prompt": "I am moving to a new apartment in four weeks. Give me a week-by-week plan that covers utilities, address changes, packing, movers, cleaning, and a final-day essentials box.",
+      "evaluator_notes": [
+        "Four-week sequencing with logical dependencies.",
+        "Covers all requested areas."
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Printer troubleshooting",
+      "category": "How-to / practical guidance",
+      "kind": "text",
+      "prompt": "A Windows PC says a network printer is \"Offline,\" but coworkers can still print to it. Give me a troubleshooting sequence that avoids deleting the printer until simpler checks are exhausted.",
+      "evaluator_notes": [
+        "Checks local queue, connectivity, correct port/IP, spooler, stale jobs before reinstallation.",
+        "Uses least-destructive order."
+      ]
+    },
+    {
+      "id": 40,
+      "title": "3-2-1 backup setup",
+      "category": "How-to / practical guidance",
+      "kind": "text",
+      "prompt": "Explain how I could set up a practical 3-2-1 backup plan for one desktop PC with about 2 TB of important data. Give one affordable example using an external drive and a cloud backup service.",
+      "evaluator_notes": [
+        "Correctly explains 3 copies, 2 media/types, 1 offsite.",
+        "Includes restore testing and realistic automation."
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Replace a leaking faucet washer safely",
+      "category": "How-to / practical guidance",
+      "kind": "text",
+      "prompt": "A bathroom faucet drips even when it is fully closed. Give me a safe, general troubleshooting process for a replaceable washer or cartridge faucet, including when I should stop and call a plumber.",
+      "evaluator_notes": [
+        "Starts with water shutoff and pressure relief.",
+        "Acknowledges fixture types differ and includes stop conditions for seized/damaged valves or leaks."
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Reschedule a meeting",
+      "category": "Draft communication",
+      "kind": "text",
+      "prompt": "Write a short email asking to move a 2:00 PM meeting to either 3:30 PM today or the same time tomorrow. I have a customer issue that needs immediate attention. Keep it polite and straightforward.",
+      "evaluator_notes": [
+        "Includes both alternatives and brief reason.",
+        "Professional and concise."
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Decline an invitation",
+      "category": "Draft communication",
+      "kind": "text",
+      "prompt": "Write a friendly text declining a Saturday dinner invitation because I already have plans. I want it to sound appreciative and not invite a long explanation.",
+      "evaluator_notes": [
+        "Warm, clear decline without oversharing.",
+        "Appropriate text-message length."
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Landlord maintenance request",
+      "category": "Draft communication",
+      "kind": "text",
+      "prompt": "Write a maintenance request to my landlord: the bedroom ceiling fan makes a grinding noise and wobbles at medium or high speed. I have stopped using it because I am concerned it could come loose. Ask for someone to inspect it.",
+      "evaluator_notes": [
+        "Clearly describes symptoms, safety concern, and requested inspection.",
+        "Does not advise continuing to use the fan."
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Recruiter follow-up",
+      "category": "Draft communication",
+      "kind": "text",
+      "prompt": "Write a brief follow-up email to a recruiter. I interviewed six business days ago, they said I would hear back within a week, and I am still interested in the role. I do not want to sound impatient.",
+      "evaluator_notes": [
+        "Polite status check, reiterates interest, no pressure.",
+        "Appropriate timing acknowledged implicitly or explicitly."
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Apology to coworker",
+      "category": "Draft communication",
+      "kind": "text",
+      "prompt": "Write a short message to a coworker apologizing because I changed a shared configuration without telling them and it interrupted their testing for about 20 minutes. I fixed it and I will coordinate changes first next time.",
+      "evaluator_notes": [
+        "Owns the specific impact without excuses.",
+        "Includes remediation and future behavior."
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Refund request",
+      "category": "Draft communication",
+      "kind": "text",
+      "prompt": "Write a polite but firm email asking a retailer for a refund. The item arrived with a cracked screen, I reported it the same day, and the replacement they sent has the same defect. I would rather be refunded than receive a third unit.",
+      "evaluator_notes": [
+        "Clearly states sequence and desired resolution.",
+        "Firm but professional."
+      ]
+    },
+    {
+      "id": 48,
+      "title": "Meeting agenda",
+      "category": "Draft communication",
+      "kind": "text",
+      "prompt": "Create a concise 30-minute meeting agenda for deciding whether to replace an aging office Wi-Fi system. Include current problems, requirements, budget/timeline, options, decision criteria, and next steps.",
+      "evaluator_notes": [
+        "Fits 30 minutes with sensible time boxes.",
+        "Covers all requested decision topics."
+      ]
+    },
+    {
+      "id": 49,
+      "title": "Beginner walking plan",
+      "category": "Health / fitness / self-care guidance",
+      "kind": "text",
+      "prompt": "I have been mostly sedentary and want to start walking for exercise without overdoing it. Give me a conservative 4-week beginner plan and explain what signs mean I should slow down or seek medical advice.",
+      "evaluator_notes": [
+        "Gradual progression and rest/recovery.",
+        "Includes red flags and avoids pretending to replace individualized medical advice."
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Cold vs allergies",
+      "category": "Health / fitness / self-care guidance",
+      "kind": "text",
+      "prompt": "How can I tell the difference between a common cold and seasonal allergies based on symptoms? Give me typical patterns, but also tell me when symptoms should be evaluated by a clinician.",
+      "evaluator_notes": [
+        "Accurate high-level differences such as itchiness/seasonality vs infectious symptoms.",
+        "Includes escalation for severe, persistent, or concerning symptoms."
+      ]
+    },
+    {
+      "id": 51,
+      "title": "Sleep hygiene",
+      "category": "Health / fitness / self-care guidance",
+      "kind": "text",
+      "prompt": "I take a long time to fall asleep even though I am tired. Give me evidence-based sleep-hygiene changes I can try for two weeks before I decide whether to talk to a doctor.",
+      "evaluator_notes": [
+        "Practical sleep schedule, light/caffeine/screens/bed association guidance.",
+        "Mentions persistent insomnia or concerning symptoms warrant evaluation."
+      ]
+    },
+    {
+      "id": 52,
+      "title": "Calorie deficit basics",
+      "category": "Health / fitness / self-care guidance",
+      "kind": "text",
+      "prompt": "Explain calorie deficit for weight loss without giving me a crash diet. I want to understand why weight can fluctuate day to day even when fat loss is happening slowly.",
+      "evaluator_notes": [
+        "Explains energy balance and water/glycogen/sodium fluctuations.",
+        "Avoids extreme restriction and frames sustainable pace."
+      ]
+    },
+    {
+      "id": 53,
+      "title": "Chest pain safety test",
+      "category": "Health / fitness / self-care guidance",
+      "kind": "text",
+      "prompt": "I have pressure in the center of my chest, I am sweating, and the discomfort is spreading into my left arm. Should I wait and see if it goes away?",
+      "evaluator_notes": [
+        "Treats as a potential emergency and recommends immediate emergency services, not driving oneself.",
+        "Does not waste time on a long differential diagnosis or reassurance."
+      ]
+    },
+    {
+      "id": 54,
+      "title": "English to Spanish informal",
+      "category": "Translation / language help",
+      "kind": "text",
+      "prompt": "Translate this into natural, informal Spanish for a friend: \"I'm running about 15 minutes late. Go ahead and order without me - I'll be there soon.\" Then give a more formal version.",
+      "evaluator_notes": [
+        "Natural informal and formal register difference.",
+        "Preserves meaning and timing."
+      ]
+    },
+    {
+      "id": 55,
+      "title": "Spanish idiom to English",
+      "category": "Translation / language help",
+      "kind": "text",
+      "prompt": "Translate and explain the nuance of: \"No hay mal que por bien no venga.\" Give a literal translation and a natural English equivalent.",
+      "evaluator_notes": [
+        "Captures proverb meaning rather than word-for-word only.",
+        "Provides a plausible English equivalent such as a silver-lining idea."
+      ]
+    },
+    {
+      "id": 56,
+      "title": "French travel phrase",
+      "category": "Translation / language help",
+      "kind": "text",
+      "prompt": "Translate into polite French: \"Excuse me, is this train going to Lyon, and do I need to change trains?\" Then provide a simple pronunciation guide for an English speaker.",
+      "evaluator_notes": [
+        "Correct polite French and understandable pronunciation aid.",
+        "Does not overcomplicate phonetics."
+      ]
+    },
+    {
+      "id": 57,
+      "title": "Tagalog nuance",
+      "category": "Translation / language help",
+      "kind": "text",
+      "prompt": "What does the Tagalog phrase \"ingat ka\" mean in English? Explain when someone would say it and give two natural English translations depending on context.",
+      "evaluator_notes": [
+        "Captures \"take care / be careful\" nuance.",
+        "Contextual examples are natural."
+      ]
+    },
+    {
+      "id": 58,
+      "title": "Python off-by-one bug",
+      "category": "Coding / debugging",
+      "kind": "text",
+      "prompt": "This function is supposed to return the sum of the integers from 1 through n, inclusive, but it gives the wrong answer. Find the bug, fix it, and explain it briefly.\n\n```python\ndef sum_to_n(n):\n    total = 0\n    for i in range(1, n):\n        total += i\n    return total\n```",
+      "evaluator_notes": [
+        "Fixes range to include n (for example range(1, n+1)).",
+        "Explains Python range stop is exclusive."
+      ]
+    },
+    {
+      "id": 59,
+      "title": "Safe Bash cleanup",
+      "category": "Coding / debugging",
+      "kind": "text",
+      "prompt": "Write a Bash script that deletes only `.tmp` files older than 7 days inside `/var/app/cache` and its subdirectories. It should print each file before deleting it and should fail if the target directory does not exist. Avoid dangerous broad `rm` patterns.",
+      "evaluator_notes": [
+        "Uses a constrained find command or equivalent with type/name/mtime.",
+        "Checks directory existence and prints before deletion; no unsafe wildcard deletion."
+      ]
+    },
+    {
+      "id": 60,
+      "title": "SQL aggregation",
+      "category": "Coding / debugging",
+      "kind": "text",
+      "prompt": "Given a table `orders(id, customer_id, order_date, total)`, write SQL that returns each customer_id with the number of orders and total revenue for orders placed in 2026, sorted by total revenue descending.",
+      "evaluator_notes": [
+        "Correct WHERE date range, GROUP BY, COUNT, SUM, ORDER BY.",
+        "Uses a robust 2026 date range rather than text matching."
+      ]
+    },
+    {
+      "id": 61,
+      "title": "JavaScript fetch error handling",
+      "category": "Coding / debugging",
+      "kind": "text",
+      "prompt": "Fix this JavaScript so network errors and non-2xx HTTP responses are handled, and so the caller receives parsed JSON only on success:\n\n```js\nasync function getUser(id) {\n  const res = await fetch(`/api/users/${id}`);\n  return res.json();\n}\n```",
+      "evaluator_notes": [
+        "Checks res.ok and handles/rethrows network errors appropriately.",
+        "Returns parsed JSON on success; avoids swallowing useful error information."
+      ]
+    },
+    {
+      "id": 62,
+      "title": "Parse simple log counts",
+      "category": "Coding / debugging",
+      "kind": "text",
+      "prompt": "Write a Python function that takes a multiline string of log lines and returns a dictionary counting how many lines contain `INFO`, `WARN`, and `ERROR`. Matching should be case-sensitive and a line should count toward at most one of those levels. Include a short test example.",
+      "evaluator_notes": [
+        "Correct one-pass counting and mutually exclusive logic.",
+        "Includes runnable example and sensible handling of unrelated lines."
+      ]
+    },
+    {
+      "id": 63,
+      "title": "Network diagram image",
+      "category": "Image generation",
+      "kind": "image_gen",
+      "prompt": "Create a clean 16:9 diagram for a home lab showing: Internet -> Firewall -> Managed Switch -> three branches labeled Proxmox Server, NAS, and Wi-Fi Access Point. Use simple icons, large readable labels, and a professional technical-document style. Do not add devices that were not requested.",
+      "evaluator_notes": [
+        "For a tool-enabled assistant: actually produces or invokes an image-generation capability.",
+        "Layout matches topology, labels are readable, and no extra topology is invented."
+      ]
+    },
+    {
+      "id": 64,
+      "title": "Simple event poster",
+      "category": "Image generation",
+      "kind": "image_gen",
+      "prompt": "Create a square poster image for a neighborhood electronics recycling day. It should say \"Electronics Recycling Day\", \"Saturday 9 AM - 1 PM\", and \"Old computers, phones, cables, and small electronics accepted.\" Use a clean community-event style and make the text easy to read on a phone.",
+      "evaluator_notes": [
+        "For a tool-enabled assistant: produces an image with the required exact information.",
+        "Text is legible and no unsupported claims or dates are added."
+      ]
+    },
+    {
+      "id": 65,
+      "title": "Low-cost birthday ideas",
+      "category": "Brainstorming / creative ideation",
+      "kind": "text",
+      "prompt": "Give me 12 birthday ideas for an adult who does not drink alcohol, dislikes loud bars, and would rather do something interactive than sit at a restaurant. Keep each idea under about $40 per person.",
+      "evaluator_notes": [
+        "Ideas satisfy constraints and are meaningfully varied.",
+        "Avoids mostly duplicating the same activity."
+      ]
+    },
+    {
+      "id": 66,
+      "title": "Home-lab project ideas",
+      "category": "Brainstorming / creative ideation",
+      "kind": "text",
+      "prompt": "Brainstorm 10 useful home-lab projects for someone who already runs a NAS, Home Assistant, and a hypervisor. Prioritize projects that teach a new infrastructure skill rather than just adding another dashboard.",
+      "evaluator_notes": [
+        "Projects are distinct and skill-building.",
+        "Avoids merely renaming existing services."
+      ]
+    },
+    {
+      "id": 67,
+      "title": "Names for a local AI assistant",
+      "category": "Brainstorming / creative ideation",
+      "kind": "text",
+      "prompt": "Give me 20 names for a private, local-first AI assistant that coordinates devices around a home lab. Avoid names that are obvious copies of Jarvis, HAL, Cortana, or existing major AI products. Group them into serious, technical, and playful options.",
+      "evaluator_notes": [
+        "20 names, grouped as requested.",
+        "Names are reasonably original and fit the concept."
+      ]
+    },
+    {
+      "id": 68,
+      "title": "Remote team-building ideas",
+      "category": "Brainstorming / creative ideation",
+      "kind": "text",
+      "prompt": "Brainstorm 8 remote team-building activities for a 12-person IT team spread across three time zones. Each activity should fit in 30 minutes and should not require anyone to buy anything.",
+      "evaluator_notes": [
+        "All meet 12-person, remote, 30-minute, no-purchase constraints.",
+        "Mix of social and collaborative options."
+      ]
+    },
+    {
+      "id": 69,
+      "title": "Incident summary",
+      "category": "Summarization / synthesis",
+      "kind": "text",
+      "prompt": "Summarize the following incident in 5 bullets: impact, root cause, fix, validation, and remaining risk.\n\n\"At 9:12 AM, users in the east wing began reporting that the inventory application was freezing for 20 to 60 seconds at a time. The application server itself remained healthy. Network monitoring showed repeated packet loss on the uplink from access switch E3. At 9:40 AM, the team moved the uplink to a spare SFP module and the packet loss stopped. Application response times returned to normal immediately. A 45-minute user test found no further freezes. The failed SFP has been removed, but the switch is still running on a single uplink until a replacement spare arrives tomorrow, so there is temporarily no uplink redundancy.\"",
+      "evaluator_notes": [
+        "Five bullets mapped to requested headings.",
+        "Correctly identifies packet loss/failing SFP and temporary redundancy risk."
+      ]
+    },
+    {
+      "id": 70,
+      "title": "Email thread summary",
+      "category": "Summarization / synthesis",
+      "kind": "text",
+      "prompt": "Summarize this email thread into: decision, owner, deadline, and unresolved question.\n\nAlex: \"The vendor can deliver the replacement UPS by Thursday for $1,850. The larger model is $2,300 but gives us about 20 more minutes of runtime.\"\nPriya: \"I think the standard model is enough. Our generator starts in under five minutes. I can submit the PO if everyone agrees.\"\nMarco: \"Agreed on the standard model. Before we order, can Facilities confirm the outlet type in the server room?\"\nAlex: \"Facilities can check tomorrow morning. If the outlet matches, let's order the standard model that day.\"",
+      "evaluator_notes": [
+        "Decision is standard model pending outlet confirmation; owner Priya for PO.",
+        "Deadline/timing tomorrow/Thursday and unresolved outlet question captured."
+      ]
+    },
+    {
+      "id": 71,
+      "title": "Policy summary for employees",
+      "category": "Summarization / synthesis",
+      "kind": "text",
+      "prompt": "Summarize this policy in plain English for employees in no more than 100 words:\n\n\"Company-issued laptops must install critical security updates within seven calendar days of release. Devices that remain noncompliant after seven days may be automatically restarted outside the user's configured active hours. Employees who will be traveling without reliable Internet access should install pending updates before departure. Exceptions for systems supporting active customer events must be approved by Information Security and expire after fourteen days.\"",
+      "evaluator_notes": [
+        "<=100 words and retains deadline, restart behavior, travel guidance, and exception process.",
+        "Plain English."
+      ]
+    },
+    {
+      "id": 72,
+      "title": "Meeting transcript synthesis",
+      "category": "Summarization / synthesis",
+      "kind": "text",
+      "prompt": "Read the notes and produce a 4-sentence executive summary followed by a list of action items with owners.\n\n\"Maya: Sales wants the new pricing page live by October 1. Devin: Engineering can do the page itself, but the billing API change is the risky part. Chen: Legal needs five business days to review the final terms. Maya: We can freeze copy by September 18. Devin: If copy is frozen then, engineering can send a staging build by September 22. Chen: Legal will review September 22-28 if there are no major rewrites. Maya: I will own final copy. Devin: I will own staging and the API change. Chen: I will own legal review.\"",
+      "evaluator_notes": [
+        "Executive summary captures schedule dependency and API risk.",
+        "Action items assign Maya, Devin, Chen correctly with dates."
+      ]
+    },
+    {
+      "id": 73,
+      "title": "Compare two proposals",
+      "category": "Summarization / synthesis",
+      "kind": "text",
+      "prompt": "Summarize the key tradeoff between these two proposals in one paragraph, then give a 3-row comparison table.\n\nProposal A costs $18,000 up front, uses hardware we own, and is expected to cost $2,000 per year to maintain. It can run without Internet access but requires our staff to patch it.\nProposal B has no up-front hardware cost and costs $650 per month. The vendor handles patching and support, but the service requires Internet access and stores data in the vendor's cloud.",
+      "evaluator_notes": [
+        "Captures capex/opex, maintenance responsibility, offline capability, and cloud dependency.",
+        "Table is accurate and concise."
+      ]
+    },
+    {
+      "id": 74,
+      "title": "Discount then sales tax",
+      "category": "Math / calculations",
+      "kind": "text",
+      "prompt": "A monitor costs $799.99. It is 15% off, then 7.5% sales tax is applied to the discounted price. What is the final price to the nearest cent? Show the calculation.",
+      "evaluator_notes": [
+        "Correct arithmetic and order of operations.",
+        "Final value rounded to cents."
+      ]
+    },
+    {
+      "id": 75,
+      "title": "Prorated rent split",
+      "category": "Math / calculations",
+      "kind": "text",
+      "prompt": "Three roommates split $2,400 monthly rent equally. One roommate moves in on the 11th of a 30-day month and should only pay for the 20 days they live there. If the other two split the remainder equally, how much does each person pay that month? Show your assumptions.",
+      "evaluator_notes": [
+        "Prorates one-third monthly share by 20/30 = $533.33, then splits remainder reasonably.",
+        "Explicitly states rounding and assumptions."
+      ]
+    },
+    {
+      "id": 76,
+      "title": "Compound savings",
+      "category": "Math / calculations",
+      "kind": "text",
+      "prompt": "If I deposit $5,000 into an account earning 4% interest compounded annually and make no additional deposits, about how much will be in the account after 5 years? Show the formula and answer to the nearest dollar.",
+      "evaluator_notes": [
+        "Uses 5000*(1.04)^5 and gets about $6,083.",
+        "Clear formula and rounding."
+      ]
+    },
+    {
+      "id": 77,
+      "title": "Choose a laptop from supplied specs",
+      "category": "Product research / comparison",
+      "kind": "text",
+      "prompt": "Choose the best laptop for a student who values battery life first, then portability, then performance. They do not game. Use only the specs below and explain your choice.\n\n- Laptop A: 14 in, 1.2 kg, 17-hour rated battery, 8-core CPU, 16 GB RAM, $999\n- Laptop B: 15.6 in, 1.8 kg, 10-hour rated battery, 12-core CPU, 32 GB RAM, $949\n- Laptop C: 13.5 in, 1.3 kg, 15-hour rated battery, 10-core CPU, 16 GB RAM, $899",
+      "evaluator_notes": [
+        "Prioritizes stated preferences; A is a strong default based on battery then weight.",
+        "Acknowledges C's lower price and size as a tradeoff rather than pretending one answer is universal."
+      ]
+    },
+    {
+      "id": 78,
+      "title": "UPS selection from specs",
+      "category": "Product research / comparison",
+      "kind": "text",
+      "prompt": "A server draws 420 W during normal use and can spike to 550 W. Choose between these UPS options and explain why:\n\n- UPS A: 900 VA / 480 W, estimated 8 minutes at 400 W\n- UPS B: 1500 VA / 900 W, estimated 14 minutes at 400 W\n- UPS C: 1000 VA / 600 W, estimated 6 minutes at 500 W\n\nThe goal is enough headroom for spikes and at least 5 minutes to shut down safely.",
+      "evaluator_notes": [
+        "Rejects A because 480 W rating is below possible 550 W spike.",
+        "B is best headroom/runtime; C can work but has less margin."
+      ]
+    },
+    {
+      "id": 79,
+      "title": "Headphone comparison",
+      "category": "Product research / comparison",
+      "kind": "text",
+      "prompt": "I care most about comfort for 6-hour work sessions, then microphone quality, then noise cancellation. Compare these three hypothetical headsets using only the supplied data:\n\n- Alpha: 240 g, fabric pads, boom mic rated 9/10, ANC 6/10, $140\n- Beta: 310 g, leatherette pads, boom mic rated 8/10, ANC 9/10, $170\n- Gamma: 260 g, fabric pads, boom mic rated 7/10, ANC 8/10, $120\n\nRecommend one and explain the tradeoff.",
+      "evaluator_notes": [
+        "Weights comfort first; Alpha is a strong choice due lowest weight/fabric and best mic.",
+        "Explains Beta's ANC advantage and Gamma's price tradeoff."
+      ]
+    },
+    {
+      "id": 80,
+      "title": "Bad day conversation",
+      "category": "Chitchat / casual conversation",
+      "kind": "text",
+      "prompt": "I had one of those days where every tiny thing went wrong - spilled coffee, missed a meeting, then got stuck in traffic. I do not need advice; I just want to complain for a minute.",
+      "evaluator_notes": [
+        "Responds conversationally and validates the frustration without forcing solutions.",
+        "Does not over-therapize or become excessively sentimental."
+      ]
+    },
+    {
+      "id": 81,
+      "title": "Pineapple pizza debate",
+      "category": "Chitchat / casual conversation",
+      "kind": "text",
+      "prompt": "Make the strongest playful case you can for pineapple on pizza, but keep it under 120 words and do not pretend it is objectively superior.",
+      "evaluator_notes": [
+        "Playful persuasive tone, under 120 words.",
+        "Acknowledges subjectivity."
+      ]
+    },
+    {
+      "id": 82,
+      "title": "Choose between job offers",
+      "category": "Relationship / personal advice",
+      "kind": "text",
+      "prompt": "I have two job offers. Job A pays $8,000 more and has a 45-minute commute each way. Job B is fully remote, has slightly better health insurance, and sounds more interesting, but the promotion path is less clear. Help me think through the decision without telling me there is one objectively correct answer.",
+      "evaluator_notes": [
+        "Builds a decision framework around money, commute/time, benefits, interest, growth, and risk.",
+        "Does not make unsupported assumptions about user's priorities."
+      ]
+    },
+    {
+      "id": 83,
+      "title": "Friend conflict",
+      "category": "Relationship / personal advice",
+      "kind": "text",
+      "prompt": "A close friend keeps cancelling plans at the last minute. I am annoyed, but I do not want to end the friendship over it. How could I bring it up without making the conversation accusatory?",
+      "evaluator_notes": [
+        "Suggests specific, non-accusatory communication using observations and impact.",
+        "Balances boundaries with preserving relationship."
+      ]
+    },
+    {
+      "id": 84,
+      "title": "Short speculative story",
+      "category": "Creative writing / fiction",
+      "kind": "text",
+      "prompt": "Write a 350-450 word speculative-fiction story about a city where every traffic light can talk, but only one traffic light tells the truth. The ending should reframe what \"truth\" means without using a dream twist.",
+      "evaluator_notes": [
+        "Meets length and premise constraints.",
+        "Ending meaningfully reframes truth; no dream cop-out."
+      ]
+    },
+    {
+      "id": 85,
+      "title": "Dialogue with subtext",
+      "category": "Creative writing / fiction",
+      "kind": "text",
+      "prompt": "Write a 12-line dialogue between two siblings cleaning out their late grandfather's garage. They are actually arguing about whether to sell the family house, but neither person may directly say \"sell the house\" or \"keep the house.\" Make the subtext clear.",
+      "evaluator_notes": [
+        "Exactly 12 dialogue lines.",
+        "House decision is understandable through subtext without banned phrases."
+      ]
+    },
+    {
+      "id": 86,
+      "title": "Six-slide explainer outline",
+      "category": "Other media planning",
+      "kind": "text",
+      "prompt": "Create a six-slide presentation outline explaining password managers to nontechnical employees. For each slide give: title, 2-4 bullets, and one visual idea. The final slide should be a practical \"what to do today\" checklist.",
+      "evaluator_notes": [
+        "Exactly six slides with title, bullets, visual idea.",
+        "Accurate password-manager guidance and actionable final slide."
+      ]
+    },
+    {
+      "id": 87,
+      "title": "Pantry dinner",
+      "category": "Cooking / recipes",
+      "kind": "text",
+      "prompt": "I have chicken thighs, canned chickpeas, rice, onions, garlic, canned tomatoes, spinach, olive oil, and basic spices. Give me one dinner recipe for four people that uses one pot plus a rice pot. I do not have dairy. Include approximate cooking times and food-safety guidance for the chicken.",
+      "evaluator_notes": [
+        "Uses available ingredients and respects no dairy.",
+        "Reasonable timing and safe chicken doneness guidance."
+      ]
+    },
+    {
+      "id": 88,
+      "title": "Read a support-ticket chart",
+      "category": "Image analysis",
+      "kind": "vision",
+      "image": "assets/visual_task_88.png",
+      "prompt": "Look at the image `assets/visual_task_88.png`. Answer three things: (1) which month had the most support tickets, (2) by what percentage did tickets fall from March to June, rounded to the nearest whole percent, and (3) describe the overall trend from March through June in one sentence.",
+      "evaluator_notes": [
+        "Reads March=55 and June=27; reduction is about 51%.",
+        "Trend description accurately notes a sustained decline after March."
+      ]
+    },
+    {
+      "id": 89,
+      "title": "Read a server-status dashboard",
+      "category": "Image analysis",
+      "kind": "vision",
+      "image": "assets/visual_task_89.png",
+      "prompt": "Look at the image `assets/visual_task_89.png`. Identify the two items that deserve the most immediate attention and explain why. Then name one item that looks normal and does not need action based on the snapshot alone.",
+      "evaluator_notes": [
+        "Prioritizes failed backups and 92% disk usage.",
+        "Can identify firewall enabled, 54 C CPU, or 2-hour sync as not obviously urgent based on snapshot alone."
+      ]
+    },
+    {
+      "id": 90,
+      "title": "Analyze a small sales table",
+      "category": "Data / spreadsheet analysis",
+      "kind": "text",
+      "prompt": "Analyze this table and tell me: highest-revenue region, lowest average order value, and one useful observation. Show the calculation for average order value.\n\n| Region | Orders | Revenue |\n| East | 120 | $24,000 |\n| West | 80 | $20,000 |\n| North | 150 | $27,000 |\n| South | 60 | $15,600 |",
+      "evaluator_notes": [
+        "Highest revenue North ($27k).",
+        "Average order values: East 200, West 250, North 180, South 260; lowest North.",
+        "Observation is grounded in table."
+      ]
+    },
+    {
+      "id": 91,
+      "title": "Spreadsheet formula",
+      "category": "Data / spreadsheet analysis",
+      "kind": "text",
+      "prompt": "In Excel or Google Sheets, column A is invoice date, B is customer, C is amount, and D is status. Give me a formula that sums amounts in C where the status in D is \"Paid\" and the invoice date in A is on or after January 1, 2026. Explain the formula briefly.",
+      "evaluator_notes": [
+        "Uses SUMIFS with status and date criteria.",
+        "Correct date criterion syntax or DATE(2026,1,1)."
+      ]
+    },
+    {
+      "id": 92,
+      "title": "Office sign-in loop",
+      "category": "IT / technical troubleshooting",
+      "kind": "text",
+      "prompt": "A user with a valid Microsoft 365 license can open Office apps, but every app repeatedly asks them to sign in and then returns to the sign-in prompt. Other users on the same network are fine. Give me a troubleshooting plan that starts with low-risk checks and separates identity/cache issues from licensing and profile corruption.",
+      "evaluator_notes": [
+        "Ordered checks: service/account/license, time/network, Office/WAM credentials/cache, profile/app repair as escalation.",
+        "Avoids destructive reset/reimage as first step."
+      ]
+    },
+    {
+      "id": 93,
+      "title": "DNS works by IP but not name",
+      "category": "IT / technical troubleshooting",
+      "kind": "text",
+      "prompt": "A Linux server can ping 1.1.1.1 successfully but `ping example.com` says the name cannot be resolved. Other machines on the LAN can resolve names. What does that tell you, and what would you check next?",
+      "evaluator_notes": [
+        "Correctly localizes likely DNS/resolver issue rather than general connectivity.",
+        "Checks resolv.conf/systemd-resolved, configured DNS, reachability, firewall, and lookup tools."
+      ]
+    },
+    {
+      "id": 94,
+      "title": "No POST after RAM upgrade",
+      "category": "IT / technical troubleshooting",
+      "kind": "text",
+      "prompt": "A desktop worked normally, then after installing additional RAM it powers on but shows no display and never reaches POST. Give me a safe troubleshooting sequence. Assume the new RAM is not known-good.",
+      "evaluator_notes": [
+        "Power off/unplug, reseat, restore original config, test one stick/slot, clear CMOS if appropriate, verify compatibility.",
+        "Avoids hot-swapping or other unsafe steps."
+      ]
+    },
+    {
+      "id": 95,
+      "title": "Extract action items",
+      "category": "Office / administrative work",
+      "kind": "text",
+      "prompt": "Turn these messy notes into an action-item table with columns Owner, Action, Due, and Dependency. If something is missing, write \"Not specified\" instead of guessing.\n\n\"Sam to send revised quote by Friday. Finance needs the quote before they can approve. Lila will book training after approval. We still need someone to confirm whether the conference room has HDMI. Jorge said he can check the room but did not give a date.\"",
+      "evaluator_notes": [
+        "Correct rows for Sam, Lila, Jorge and finance dependency.",
+        "Uses Not specified where dates/owners are missing instead of inventing."
+      ]
+    },
+    {
+      "id": 96,
+      "title": "Normalize a schedule",
+      "category": "Office / administrative work",
+      "kind": "text",
+      "prompt": "Turn this into a clean chronological schedule. Flag conflicts instead of silently resolving them.\n\n- Vendor call: 10:30-11:00\n- Lunch with Dana: 12:00-1:00\n- Project review: 10:45-11:30\n- Dentist: 2:15-3:00\n- Submit expense report: due by 5:00 PM, takes about 20 minutes",
+      "evaluator_notes": [
+        "Chronological ordering and flags overlap between vendor call/project review.",
+        "Does not invent a new time for expense report; may suggest open windows explicitly as suggestions."
+      ]
+    },
+    {
+      "id": 97,
+      "title": "Build vs buy decision",
+      "category": "Business analysis / decision support",
+      "kind": "text",
+      "prompt": "A small company needs an internal ticketing system. Option A is SaaS at $900/month with vendor support and a two-week rollout. Option B is self-hosted at an estimated $8,000 implementation cost plus $250/month infrastructure, with more customization but staff responsible for maintenance. Give me a decision framework and identify what facts would most change the choice.",
+      "evaluator_notes": [
+        "Compares time horizon/TCO, staffing, customization, security/compliance, lock-in, rollout time.",
+        "Requests missing facts rather than declaring a universal winner."
+      ]
+    },
+    {
+      "id": 98,
+      "title": "Prioritize projects",
+      "category": "Business analysis / decision support",
+      "kind": "text",
+      "prompt": "Prioritize these four projects using impact, urgency, effort, and risk. Explain your ranking rather than just sorting by cost.\n\nA: Patch an Internet-facing server with a known critical vulnerability; 2 hours.\nB: Redesign the intranet home page; 3 weeks.\nC: Automate a weekly report that takes an analyst 4 hours every week; 2 days.\nD: Replace meeting-room TVs that still work but are 8 years old; 1 week.",
+      "evaluator_notes": [
+        "A should rank first due urgent security risk.",
+        "C likely high due recurring savings; B/D lower absent stronger business drivers."
+      ]
+    },
+    {
+      "id": 99,
+      "title": "B2B outreach without hype",
+      "category": "Sales / marketing / outreach",
+      "kind": "text",
+      "prompt": "Write a 120-word-or-less cold email to an IT manager about a managed backup service. Facts you may use: nightly backups, 30-day retention, quarterly restore tests, month-to-month billing. Do not claim the service prevents ransomware, guarantees recovery, or is \"the best.\" The goal is to ask for a 15-minute call.",
+      "evaluator_notes": [
+        "<=120 words, uses only supplied claims, asks for 15-minute call.",
+        "Avoids prohibited hype/guarantees."
+      ]
+    },
+    {
+      "id": 100,
+      "title": "Constrained text adventure",
+      "category": "Games / role-play",
+      "kind": "text",
+      "prompt": "Run the opening turn of a text adventure. I am a museum night guard who hears a phone ringing inside a locked exhibit that has not contained a phone for 80 years. Give me exactly three choices labeled A, B, and C. Do not decide what I do for me, and do not reveal the mystery yet.",
+      "evaluator_notes": [
+        "Atmospheric opening, exactly three labeled choices.",
+        "Preserves agency and mystery."
+      ]
+    }
+  ]
+}
