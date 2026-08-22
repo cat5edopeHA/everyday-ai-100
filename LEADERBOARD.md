@@ -5,7 +5,7 @@ task, no tools/web/retrieval, temperature 0.0, 65,536 context. Judge:
 `deepseek-v4-flash` via API (different family from all candidates). Core score =
 96 text tasks ÷ 960 × 100. Speed is reported separately and never mixed into quality.
 
-Runs collected 2026-08-14 → 2026-08-18. Per-task grades are reproducible with the
+Runs collected 2026-08-14 → 2026-08-22. Per-task grades are reproducible with the
 harness in this repo (`python3 bench.py grade`).
 
 ## Full-VRAM tier (2× 12 GB GPUs, no artificial cap)
@@ -34,8 +34,9 @@ Best run per model shown; duplicate runs kept for cross-backend comparison.
 | 9 | LFM2.5-2.6B | Q8_0 | Vulkan (RX 9070 XT) | **83.3** | 800 | 570s | 123.5 | 1544 | 2026-08-14 |
 | 10 | Ling-3.0-Tiny | Q8_0 | Vulkan (upstream b123) | **82.7** | 794 | 835s | 120.9 | 828 | 2026-08-18 |
 | 11 | Ling-3.0-Tiny | Q5_K_M | Vulkan (fork baseline) | **82.3** | 790 | 818s | 119.1 | 885 | 2026-08-14 |
-| 12 | VibeThinker-3B | Q8_0 | CUDA (RTX 3060) | **56.1** | 539 | 3050s | 69.5 | 1861 | 2026-08-14 |
-| 13 | MiniCPM5-1B | Q8_0 | CUDA (RTX 3060) | **53.1** | 510 | 534s | 183.8 | 4338 | 2026-08-14 |
+| 12 | Phi-4-mini-instruct | Q4_K_M | Vulkan (RX 9070 XT) | **82.9** | 796 | 500s | 46.0 | 903 | 2026-08-22 |
+| 13 | VibeThinker-3B | Q8_0 | CUDA (RTX 3060) | **56.1** | 539 | 3050s | 69.5 | 1861 | 2026-08-14 |
+| 14 | MiniCPM5-1B | Q8_0 | CUDA (RTX 3060) | **53.1** | 510 | 534s | 183.8 | 4338 | 2026-08-14 |
 
 ### Safety gates (deterministic caps, enforced on every run)
 
